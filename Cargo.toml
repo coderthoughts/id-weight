@@ -1,7 +1,7 @@
 [package]
 name = "id_weight"
 version = "0.1.0"
-authors = ["David Bosschaert <bosschae@adobe.com>"]
+authors = ["David Bosschaert <david.bosschaert@gmail.com>"]
 edition = "2018"
 
 [dependencies]
