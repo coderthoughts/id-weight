@@ -73,7 +73,7 @@ fn main() {
     write_weight_to_file(format!("{}/{}.{}", dir, file, ext).as_str(), weight).unwrap();
 }
 
-fn read_from_scale<T: SerialPort>(port: &mut T, device_name: &str) -> io::Result<(u32)> {
+fn read_from_scale<T: SerialPort>(port: &mut T, device_name: &str) -> io::Result<u32> {
     port.reconfigure(&|settings| {
         settings.set_baud_rate(serial::Baud9600)?;
         settings.set_char_size(serial::Bits8);
