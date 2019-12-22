@@ -1,0 +1,21 @@
+[package]
+name = "id_weight"
+version = "0.1.0"
+authors = ["David Bosschaert <bosschae@adobe.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2"
+chrono = "0.4"
+serial = "0.4"
+serial-core = "0.4"
+lazy_static = "1.4"
+regex = "1"
+
+#[profile.release]
+#opt-level = 'z'  # Optimize for size.
+#lto = true
+#panic = 'abort'
+#codegen-units = 1
+
+# Also: strip <binary_name>
